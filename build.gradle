@@ -1,4 +1,27 @@
 plugins {
-    id "example"
-    id "org.cyclonedx.bom" version "1.10.0"
+    id "java-platform"
+    id "maven-publish"
+}
+
+javaPlatform {
+    allowDependencies()
+}
+
+dependencies {
+    api(platform("org.junit:junit-bom:5.10.0"))
+
+    constraints {
+        api("org.assertj:assertj-core:3.24.2")
+    }
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.javaPlatform
+            groupId = "org.global.owl.versions.example"
+            artifactId = "version-catalog-demo-bom"
+            version = "0.0.0"
+        }
+    }
 }
