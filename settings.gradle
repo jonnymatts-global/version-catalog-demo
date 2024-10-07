@@ -1,2 +1,9 @@
 rootProject.name = 'version-catalog-demo'
 
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+            from("org.global.owl.versions.example:version-catalog-demo:0.0.0")
+        }
+    }
+}
