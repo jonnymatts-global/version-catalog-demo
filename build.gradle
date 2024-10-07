@@ -2,3 +2,12 @@ plugins {
     id "example"
     id "org.cyclonedx.bom" version "1.10.0"
 }
+
+ext["junitVersion"] = "5.10.0"
+ext["assertjVersion"] = "3.24.2"
+
+dependencies {
+    testImplementation platform("org.junit:junit-bom:${junitVersion}")
+    testImplementation "org.junit.jupiter:junit-jupiter"
+    testImplementation "org.assertj:assertj-core:${assertjVersion}"
+}
