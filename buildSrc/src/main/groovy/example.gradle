@@ -1,0 +1,18 @@
+plugins {
+    id "java"
+}
+
+group = "org.global.owl.versions.example"
+version = "0.0.0"
+
+java {
+    withSourcesJar()
+    withJavadocJar()
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
