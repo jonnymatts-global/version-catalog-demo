@@ -1,2 +1,14 @@
 rootProject.name = 'version-catalog-demo'
 
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+            plugin("cyclonedx", "org.cyclonedx.bom").version("1.10.0")
+            version('assertj', '3.24.2')
+            version('junit', '5.10.0')
+            library('assertjCore', 'org.assertj', 'assertj-core').versionRef("assertj")
+            library('junitJupiter', 'org.junit.jupiter', 'junit-jupiter').versionRef("junit")
+            bundle("testing", ["assertjCore", "junitJupiter"])
+        }
+    }
+}
