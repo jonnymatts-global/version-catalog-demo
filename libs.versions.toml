@@ -1,0 +1,13 @@
+[versions]
+assertj = "3.24.2"
+junit = "5.10.0"
+
+[libraries]
+assertjCore = {group = "org.assertj", name = "assertj-core", version.ref = "assertj" }
+junitJupiter = {group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junit" }
+
+[bundles]
+testing = ["assertjCore", "junitJupiter"]
+
+[plugins]
+cyclonedx = {"id" = "org.cyclonedx.bom", version = "1.10.0"}

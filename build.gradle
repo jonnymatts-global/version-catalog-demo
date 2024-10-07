@@ -1,4 +1,21 @@
 plugins {
-    id "example"
-    id "org.cyclonedx.bom" version "1.10.0"
+    id 'version-catalog'
+    id 'maven-publish'
+}
+
+catalog {
+    versionCatalog {
+        from(files("libs.versions.toml"))
+    }
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.versionCatalog
+            groupId = "org.global.owl.versions.example"
+            artifactId = "version-catalog-demo"
+            version = "0.0.0"
+        }
+    }
 }
