@@ -1,6 +1,6 @@
 # BOM Generation
 
-This example publishes a BOM to be used by the [BOM example](../../../tree/example/bom).
+This example publishes a BOM to be used by the [BOM example](../../tree/example/bom).
 
 The example uses the [java-platform plugin](https://docs.gradle.org/current/userguide/java_platform_plugin.html) 
 to generate the BOM.
