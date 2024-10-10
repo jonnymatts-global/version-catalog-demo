@@ -1,4 +1,4 @@
-package com.global.owl.versions.example;
+package org.global.owl.versions.example;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
