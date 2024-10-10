@@ -20,13 +20,13 @@ as an example of how plugins can be shared in a version catalog.
 
 ## Examples
 
-- [Hard-coded dependencies](/tree/example/hardcoded)
-- [Define dependency versions as `ext` properties](/tree/example/ext)
-- [Define dependency versions in `gradle.properties`](/tree/example/gradle-properties)
-- [Define dependency versions in a custom BOM](/tree/example/bom)
-- [Define dependency in a version catalog within `settings.gradle`](/tree/example/settings)
-- [Define dependency in a .toml version catalog](/tree/example/gradle-tomly)
-- [Define dependency in a shared version catalog](/tree/example/shared-catalog)
+- [Hard-coded dependencies](../../tree/example/hardcoded)
+- [Define dependency versions as `ext` properties](../../tree/example/ext)
+- [Define dependency versions in `gradle.properties`](../../tree/example/gradle-properties)
+- [Define dependency versions in a custom BOM](../../tree/example/bom)
+- [Define dependency in a version catalog within `settings.gradle`](../../tree/example/settings)
+- [Define dependency in a .toml version catalog](../../tree/example/gradle-tomly)
+- [Define dependency in a shared version catalog](../../tree/example/shared-catalog)
 
 ## Build
 
